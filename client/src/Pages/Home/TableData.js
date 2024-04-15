@@ -91,7 +91,7 @@ const TableData = (props) => {
 
   return (
     <>
-      <Container>
+      <Container style={{borderRadius: "1px solid black"}}>
         <Table responsive="md" className="data-table">
           <thead>
             <tr>
@@ -103,7 +103,7 @@ const TableData = (props) => {
               <th>Action</th>
             </tr>
           </thead>
-          <tbody className="text-white">
+          <tbody className="text-black">
             {props.data.map((item, index) => (
               <tr key={index}>
                 <td>{moment(item.date).format("YYYY-MM-DD")}</td>

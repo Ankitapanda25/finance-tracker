@@ -30,7 +30,7 @@ const ModelForm = ({transaction, onClose, isShow}) => {
   // };
 
   return (
-    <div>
+    <div className="text-black">
       <Modal show={isShow} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>Update Transaction Details</Modal.Title>

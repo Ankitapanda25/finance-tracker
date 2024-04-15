@@ -97,29 +97,29 @@ export const loginControllers = async (req, res, next) => {
     }
 }
 
-export const setAvatarController = async (req, res, next)=> {
-    try{
+// export const setAvatarController = async (req, res, next)=> {
+//     try{
 
-        const userId = req.params.id;
+//         const userId = req.params.id;
        
-        const imageData = req.body.image;
+//         const imageData = req.body.image;
       
-        const userData = await User.findByIdAndUpdate(userId, {
-            isAvatarImageSet: true,
-            avatarImage: imageData,
-        },
-        { new: true });
+//         const userData = await User.findByIdAndUpdate(userId, {
+//             isAvatarImageSet: true,
+//             avatarImage: imageData,
+//         },
+//         { new: true });
 
-        return res.status(200).json({
-            isSet: userData.isAvatarImageSet,
-            image: userData.avatarImage,
-          });
+//         return res.status(200).json({
+//             isSet: userData.isAvatarImageSet,
+//             image: userData.avatarImage,
+//           });
 
 
-    }catch(err){
-        next(err);
-    }
-}
+//     }catch(err){
+//         next(err);
+//     }
+// }
 
 export const allUsers = async (req, res, next) => {
     try{
