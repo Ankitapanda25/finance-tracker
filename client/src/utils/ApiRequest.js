@@ -1,5 +1,5 @@
 
-const host = "https://finance-tracker-api-snowy.vercel.app";
+const host = "http://localhost:4000";
 // export const setAvatarAPI = `${host}/api/auth/setAvatar`;
 export const registerAPI = `${host}/api/auth/register`;
 export const loginAPI = `${host}/api/auth/login`;
